@@ -16,6 +16,11 @@ import { LineScatterDiagramComponent } from './examples/line-scatter-diagram/lin
 import { LineChartWithAreaComponent } from './examples/line-chart-with-area/line-chart-with-area.component';
 import { BiPolarLineChartComponent } from './examples/bi-polar-line-chart/bi-polar-line-chart.component';
 import { UsingEventsToReplaceGraphicsComponent } from './examples/using-events-to-replace-graphics/using-events-to-replace-graphics.component';
+import { AdvancedSmilAnimationsComponent } from './examples/advanced-smil-animations/advanced-smil-animations.component';
+import { SvgPathAnimationComponent } from './examples/svg-path-animation/svg-path-animation.component';
+import { LineInterpolationComponent } from './examples/line-interpolation/line-interpolation.component';
+import { SeriesOverridesComponent } from './examples/series-overrides/series-overrides.component';
+import { TimeSeriesWithMomentjsComponent } from './examples/time-series-with-momentjs/time-series-with-momentjs.component';
 
 
 @NgModule({
@@ -29,7 +34,12 @@ import { UsingEventsToReplaceGraphicsComponent } from './examples/using-events-t
     LineScatterDiagramComponent,
     LineChartWithAreaComponent,
     BiPolarLineChartComponent,
-    UsingEventsToReplaceGraphicsComponent
+    UsingEventsToReplaceGraphicsComponent,
+    AdvancedSmilAnimationsComponent,
+    SvgPathAnimationComponent,
+    LineInterpolationComponent,
+    SeriesOverridesComponent,
+    TimeSeriesWithMomentjsComponent
   ],
   imports: [
     BrowserModule,
