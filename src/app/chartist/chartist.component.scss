@@ -1,0 +1,4 @@
+// add "without-styles" class not to include the chartist styles
+:host:not(.without-styles) ::ng-deep {
+  @import "~chartist/dist/scss/chartist";
+}

@@ -1,0 +1,41 @@
+@import "normalize";
+@mixin background-article() {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAIoElEQ…RjN9uDAEwr9rqpaja3xzCHxZ5t69//fICTajLnwlTSHBvjP9uuEN4BiDLbAAAAAElFTkSuQmCC);
+  background-color: #EADBC4;
+}
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: #fec127;
+  h1 {
+    text-transform: uppercase;
+  }
+  h1, h2, h3, p, a {
+    color: #fff;
+    font-weight: 300;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 50px;
+  }
+  h3 {
+    background: #453D3F;
+    padding: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  .examples {
+    padding: 0 20px 100px 20px;
+    @include background-article();
+    .exampleCol {
+      height: 300px;
+    }
+    h4 {
+      color: #5b4421;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+}
+
+
