@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ChartData, ChartOptions, ChartResponsiveOptions, ChartSettingsType} from '../../chartist/chartist.component';
+import {IChartistData, IChartistOptions, IChartistResponsiveOptions, ChartSettingsType} from '../../chartist/chartist.component';
 
 @Component({
   selector: 'app-line-scatter-diagram',
@@ -18,7 +18,7 @@ export class LineScatterDiagramComponent {
     const times = (n) => {
       return Array.apply(null, new Array(n));
     };
-    let data: ChartData;
+    let data: IChartistData;
     data = times(52).map(Math.random).reduce((mData, rnd, index) => {
       mData.labels.push(index + 1);
       mData.series.forEach((series) => {
@@ -32,7 +32,7 @@ export class LineScatterDiagramComponent {
       })
     });
 
-    let options: ChartOptions;
+    let options: IChartistOptions;
     options = {
       showLine: false,
       axisX: {
@@ -42,7 +42,7 @@ export class LineScatterDiagramComponent {
       }
     };
 
-    let responsiveOptions: ChartResponsiveOptions;
+    let responsiveOptions: IChartistResponsiveOptions;
     responsiveOptions = [
       [
         'screen and (min-width: 640px)',

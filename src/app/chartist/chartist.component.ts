@@ -3,6 +3,35 @@ import {Component, ElementRef, Input, OnChanges, OnDestroy, OnInit, SimpleChange
 import * as Chartist from 'chartist';
 import {IPieChartOptions} from 'chartist';
 
+// workaround, until https://github.com/DefinitelyTyped/DefinitelyTyped/pull/25839#issuecomment-389833225
+// is merged
+export interface ILineChartOptions extends Chartist.IChartOptions {
+  axisX?: Chartist.IChartistStepAxis | Chartist.IChartistFixedScaleAxis | Chartist.IChartistAutoScaleAxis;
+  axisY?: Chartist.IChartistStepAxis | Chartist.IChartistFixedScaleAxis | Chartist.IChartistAutoScaleAxis;
+  width?: number | string;
+  height?: number | string;
+  showLine?: boolean;
+  showPoint?: boolean;
+  showArea?: boolean;
+  areaBase?: number;
+  lineSmooth?: Function | boolean;
+  low?: number;
+  high?: number;
+  ticks?: Array<string | number>;
+  chartPadding?: Chartist.IChartPadding;
+  fullWidth?: boolean;
+  classNames?: Chartist.ILineChartClasses;
+  series: {
+    [key: string]: {
+      lineSmooth?: Function | boolean;
+      showLine?: boolean;
+      showPoint?: boolean;
+      showArea?: boolean;
+      areaBase?: number;
+    }
+  };
+}
+
 /**
  * Possible chart types
  * @type {String}
@@ -21,7 +50,12 @@ export interface IChartistLineSmooth {
 }
 
 export type IChartistData = Chartist.IChartistData;
-export type IChartistOptions = Chartist.ILineChartOptions | Chartist.IBarChartOptions | IPieChartOptions;
+
+// workaround, until https://github.com/DefinitelyTyped/DefinitelyTyped/pull/25839#issuecomment-389833225
+// is merged
+export type IChartistOptions = ILineChartOptions | Chartist.IBarChartOptions | IPieChartOptions;
+// export type IChartistOptions = Chartist.ILineChartOptions | Chartist.IBarChartOptions | IPieChartOptions;
+
 // The right way would be here "Chartist.IResponsiveOptionTuple<ChartOptions>;",
 // but there are problems when creating a variable with such a type
 export type IChartistResponsiveOptionTuple = Array<string | IChartistOptions>;
