@@ -12,7 +12,7 @@ export class AdvancedSmilAnimationsComponent {
 
   constructor() {
 
-    const seq = 0,
+    let seq = 0,
       delays = 80,
       durations = 500;
 

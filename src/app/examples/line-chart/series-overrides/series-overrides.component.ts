@@ -33,9 +33,6 @@ export class SeriesOverridesComponent {
         // to specify configuration that will only be used for the
         // specific series.
 
-
-        // It seems that responsive series overrides are not working in Chartist.JS
-        // TODO: test it more times, report bug
         series: {
           'series-1': {
             lineSmooth: chartistService.getInterpolation()['step']()
@@ -52,7 +49,7 @@ export class SeriesOverridesComponent {
       responsiveOptions: [
         // You can even use responsive configuration overrides to
         // customize your series configuration even further!
-        ['screen and (max-width: 320px)', {
+        ['screen and (max-width: 500px)', {
           series: {
             'series-1': {
               lineSmooth: chartistService.getInterpolation()['none']()
