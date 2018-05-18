@@ -49,7 +49,29 @@ export interface IChartistLineSmooth {
     | Chartist.IChartistCardinalInterpolationOptions | Chartist.IChartistStepInterpolationOptions;
 }
 
-export type IChartistData = Chartist.IChartistData;
+// START WORKAROUND (bugs in "time-series-with-momentjs" and "holes-in-data" and "filled-holes-in-data")
+// TODO: do a pull-request in @types/chartists with this fix
+// This is one of the bugs reported: https://github.com/gionkunz/chartist-js/issues/1076
+export interface IChartistDataPoint {
+  x: number | Date;
+  y: number | Date;
+}
+export interface IChartistSeriesData {
+  name?: string;
+  value?: number;
+  data?: Array<number> | Array<IChartistDataPoint>;
+  className?: string;
+  meta?: string; // I assume this could probably be a number as well?
+}
+export interface IChartistData {
+  labels?: Array<string> | Array<number> | Array<Date>;
+  series: Array<IChartistSeriesData> | Array<Array<IChartistData>> | Array<number> |  Array<Array<number> | Array<IChartistDataPoint>>;
+}
+
+// export type IChartistData = Chartist.IChartistData;
+
+// END WORKAROUND
+
 
 // workaround, until https://github.com/DefinitelyTyped/DefinitelyTyped/pull/25839#issuecomment-389833225
 // is merged

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {ChartSettingsType} from '../../chartist/chartist.component';
 import {ChartistService} from '../../chartist/chartist.service';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-time-series-with-momentjs',
@@ -16,29 +17,37 @@ export class TimeSeriesWithMomentjsComponent {
       data: {
         labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
         series: [
-          [1, 5, 2, 5, 4, 3],
-          [2, 3, 4, 8, 1, 2],
-          [5, 4, 3, 2, 1, 0.5]
+          {
+            name: 'series-1',
+            data: [
+              {x: new Date(143134652600), y: 53},
+              {x: new Date(143234652600), y: 40},
+              {x: new Date(143340052600), y: 45},
+              {x: new Date(143366652600), y: 40},
+              {x: new Date(143410652600), y: 20},
+              {x: new Date(143508652600), y: 32},
+              {x: new Date(143569652600), y: 18},
+              {x: new Date(143579652600), y: 11}
+            ]
+          },
+          {
+            name: 'series-2',
+            data: [
+              {x: new Date(143134652600), y: 53},
+              {x: new Date(143234652600), y: 35},
+              {x: new Date(143334652600), y: 30},
+              {x: new Date(143384652600), y: 30},
+              {x: new Date(143568652600), y: 10}
+            ]
+          }
         ]
       },
       options: {
-        low: 0,
-        showArea: true,
-        showPoint: false,
-        fullWidth: true
-      },
-      events: {
-        draw: function (data) {
-          if (data.type === 'line' || data.type === 'area') {
-            data.element.animate({
-              d: {
-                begin: 2000 * data.index,
-                dur: 2000,
-                from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
-                to: data.path.clone().stringify(),
-                easing: chartistService.getSvg().Easing['easeOutQuint']
-              }
-            });
+        axisX: {
+          type: chartistService.getFixedScaleAxis(),
+          divisor: 5,
+          labelInterpolationFnc: function(value) {
+            return moment(value).format('MMM D');
           }
         }
       }
