@@ -7,38 +7,38 @@ import {IPieChartOptions} from 'chartist';
  * Possible chart types
  * @type {String}
  */
-export type ChartType = 'Pie' | 'Bar' | 'Line';
+export type IChartistType = 'Pie' | 'Bar' | 'Line';
 
-export type ChartInterfaces =
+export type IChartistBase =
   | Chartist.IChartistPieChart
   | Chartist.IChartistBarChart
   | Chartist.IChartistLineChart;
 
-export interface ChartLineSmooth {
+export interface IChartistLineSmooth {
   interpolation: 'cardinal' | 'simple' | 'none' | 'step';
   data: Chartist.IChartistInterpolationOptions | Chartist.IChartistSimpleInterpolationOptions
     | Chartist.IChartistCardinalInterpolationOptions | Chartist.IChartistStepInterpolationOptions;
 }
 
-export type ChartData = Chartist.IChartistData;
-export type ChartOptions = Chartist.ILineChartOptions | Chartist.IBarChartOptions | IPieChartOptions;
+export type IChartistData = Chartist.IChartistData;
+export type IChartistOptions = Chartist.ILineChartOptions | Chartist.IBarChartOptions | IPieChartOptions;
 // The right way would be here "Chartist.IResponsiveOptionTuple<ChartOptions>;",
 // but there are problems when creating a variable with such a type
-export type ResponsiveOptionTuple = Array<string | ChartOptions>;
-export type ChartResponsiveOptions = ResponsiveOptionTuple[];
+export type IChartistResponsiveOptionTuple = Array<string | IChartistOptions>;
+export type IChartistResponsiveOptions = IChartistResponsiveOptionTuple[];
 
 
-export interface ChartEvent {
+export interface IChartistEvent {
   [eventName: string]: (data: any) => void;
 }
 
 export interface ChartSettingsType {
-  data: ChartData;
-  options: ChartOptions;
-  events?: ChartEvent;
-  lineSmooth?: ChartLineSmooth;
-  responsiveOptions?: ChartResponsiveOptions;
-  type?: ChartType;
+  data: IChartistData;
+  options: IChartistOptions;
+  events?: IChartistEvent;
+  lineSmooth?: IChartistLineSmooth;
+  responsiveOptions?: IChartistResponsiveOptions;
+  type?: IChartistType;
 }
 
 @Component({
@@ -49,23 +49,23 @@ export interface ChartSettingsType {
 export class ChartistComponent implements OnInit, OnChanges, OnDestroy {
 
   @Input()
-  public data: Promise<ChartData> | ChartData;
+  public data: Promise<IChartistData> | IChartistData;
 
-  @Input() public type: Promise<ChartType> | ChartType;
-
-  @Input()
-  public options: Promise<ChartOptions> | ChartOptions;
+  @Input() public type: Promise<IChartistType> | IChartistType;
 
   @Input()
-  public lineSmooth: Promise<ChartLineSmooth> | ChartLineSmooth;
+  public options: Promise<IChartistOptions> | IChartistOptions;
 
   @Input()
-  public responsiveOptions: Promise<ChartResponsiveOptions> | ChartResponsiveOptions;
+  public lineSmooth: Promise<IChartistLineSmooth> | IChartistLineSmooth;
 
   @Input()
-  public events: Promise<ChartEvent> | ChartEvent;
+  public responsiveOptions: Promise<IChartistResponsiveOptions> | IChartistResponsiveOptions;
 
-  public chart: ChartInterfaces;
+  @Input()
+  public events: Promise<IChartistEvent> | IChartistEvent;
+
+  public chart: IChartistBase;
 
 
   private element: HTMLElement;
@@ -74,7 +74,7 @@ export class ChartistComponent implements OnInit, OnChanges, OnDestroy {
     this.element = element.nativeElement;
   }
 
-  public ngOnInit(): Promise<ChartInterfaces> {
+  public ngOnInit(): Promise<IChartistBase> {
     if (!this.type || !this.data) {
       Promise.reject('Expected at least type and data.');
     }
@@ -101,7 +101,7 @@ export class ChartistComponent implements OnInit, OnChanges, OnDestroy {
     }
   }
 
-  public renderChart(): Promise<ChartInterfaces> {
+  public renderChart(): Promise<IChartistBase> {
     const promises: any[] = [
       this.type,
       this.element,

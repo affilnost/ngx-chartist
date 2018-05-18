@@ -34,10 +34,10 @@ export class SeriesOverridesComponent {
         // specific series.
         series: {
           'series-1': {
-            lineSmooth: chartistService.getInterpolationFunction('step')()
+            lineSmooth: chartistService.getInterpolation()['step']()
           },
           'series-2': {
-            lineSmooth: chartistService.getInterpolationFunction('simple')(),
+            lineSmooth: chartistService.getInterpolation()['simple'](),
             showArea: true
           },
           'series-3': {
@@ -51,14 +51,14 @@ export class SeriesOverridesComponent {
         ['screen and (max-width: 320px)', {
           series: {
             'series-1': {
-              lineSmooth: chartistService.getInterpolationFunction('none')()
+              lineSmooth: chartistService.getInterpolation()['none']()
             },
             'series-2': {
-              lineSmooth: chartistService.getInterpolationFunction('none')(),
+              lineSmooth: chartistService.getInterpolation()['none'](),
               showArea: false
             },
             'series-3': {
-              lineSmooth: chartistService.getInterpolationFunction('none')(),
+              lineSmooth: chartistService.getInterpolation()['none'](),
               showPoint: true
             }
           }

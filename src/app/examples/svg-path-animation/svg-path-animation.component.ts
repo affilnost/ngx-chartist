@@ -36,7 +36,7 @@ export class SvgPathAnimationComponent {
                 dur: 2000,
                 from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
                 to: data.path.clone().stringify(),
-                easing: chartistService.getSvgEasing('easeOutQuint')
+                easing: chartistService.getSvg().Easing['easeOutQuint']
               }
             });
           }

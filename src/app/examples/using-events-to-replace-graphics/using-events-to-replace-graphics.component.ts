@@ -26,8 +26,8 @@ export class UsingEventsToReplaceGraphicsComponent {
           // If the draw event was triggered from drawing a point on the line chart
           if (mData.type === 'point') {
             // We are creating a new path SVG element that draws a triangle around the point coordinates
-
-            const triangle = chartistService.generateSvg('path', {
+            const svg = chartistService.getSvg();
+            const triangle = new svg('path', {
               d: ['M',
                 mData.x,
                 mData.y - 15,
