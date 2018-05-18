@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {ChartSettingsType} from '../../../chartist/chartist.component';
+import {Component} from '@angular/core';
+import {IChartistSettingsType} from '../../../chartist/chartist.component';
 import {ChartistService} from '../../../chartist/chartist.service';
 
 @Component({
@@ -8,7 +8,7 @@ import {ChartistService} from '../../../chartist/chartist.service';
 })
 export class UsingEventsToReplaceGraphicsComponent {
 
-  chartOpts: ChartSettingsType;
+  chartOpts: IChartistSettingsType;
   title = 'USING EVENTS TO REPLACE GRAPHICS';
 
   constructor(chartistService: ChartistService) {

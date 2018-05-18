@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {ChartSettingsType} from '../../../chartist/chartist.component';
+import {IChartistSettingsType} from '../../../chartist/chartist.component';
 import {ChartistService} from '../../../chartist/chartist.service';
 
 @Component({
@@ -8,7 +8,7 @@ import {ChartistService} from '../../../chartist/chartist.service';
 })
 export class SeriesOverridesComponent {
 
-  chartOpts: ChartSettingsType;
+  chartOpts: IChartistSettingsType;
   title = 'SERIES OVERRIDES';
 
   constructor(chartistService: ChartistService) {

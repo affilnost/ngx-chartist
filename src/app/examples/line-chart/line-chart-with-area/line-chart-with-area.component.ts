@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {ChartSettingsType} from '../../../chartist/chartist.component';
+import {IChartistSettingsType} from '../../../chartist/chartist.component';
 
 @Component({
   selector: 'app-line-chart-with-area',
@@ -7,7 +7,7 @@ import {ChartSettingsType} from '../../../chartist/chartist.component';
 })
 export class LineChartWithAreaComponent {
 
-  chartOpts: ChartSettingsType;
+  chartOpts: IChartistSettingsType;
   title = 'LINE CHART WITH AREA';
 
   constructor() {

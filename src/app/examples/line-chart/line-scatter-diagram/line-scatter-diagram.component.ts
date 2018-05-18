@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {IChartistData, IChartistOptions, IChartistResponsiveOptions, ChartSettingsType} from '../../../chartist/chartist.component';
+import {IChartistData, IChartistOptions, IChartistResponsiveOptions, IChartistSettingsType} from '../../../chartist/chartist.component';
 
 @Component({
   selector: 'app-line-scatter-diagram',
@@ -7,14 +7,14 @@ import {IChartistData, IChartistOptions, IChartistResponsiveOptions, ChartSettin
 })
 export class LineScatterDiagramComponent {
 
-  chartOpts: ChartSettingsType;
+  chartOpts: IChartistSettingsType;
   title = 'LINE SCATTER DIAGRAM WITH RESPONSIVE SETTINGS';
 
   constructor() {
     this.chartOpts = this.generateResponsiveData();
   }
 
-  generateResponsiveData(): ChartSettingsType {
+  generateResponsiveData(): IChartistSettingsType {
     const times = (n) => {
       return Array.apply(null, new Array(n));
     };

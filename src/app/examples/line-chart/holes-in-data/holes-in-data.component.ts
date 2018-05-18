@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {ChartSettingsType} from '../../../chartist/chartist.component';
+import {IChartistSettingsType} from '../../../chartist/chartist.component';
 
 @Component({
   selector: 'app-holes-in-data',
@@ -7,7 +7,7 @@ import {ChartSettingsType} from '../../../chartist/chartist.component';
 })
 export class HolesInDataComponent {
 
-  chartOpts: ChartSettingsType;
+  chartOpts: IChartistSettingsType;
   title = 'HOLES IN DATA';
 
   constructor() {

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ChartSettingsType} from '../../../chartist/chartist.component';
+import {IChartistSettingsType} from '../../../chartist/chartist.component';
 import {ChartistService} from '../../../chartist/chartist.service';
 import * as moment from 'moment';
 
@@ -9,7 +9,7 @@ import * as moment from 'moment';
 })
 export class TimeSeriesWithMomentjsComponent {
 
-  chartOpts: ChartSettingsType;
+  chartOpts: IChartistSettingsType;
   title = 'TIME SERIES WITH MOMENT.JS';
 
   constructor(chartistService: ChartistService) {

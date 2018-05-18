@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {ChartSettingsType} from '../../../chartist/chartist.component';
+import {IChartistSettingsType} from '../../../chartist/chartist.component';
 
 @Component({
   selector: 'app-only-whole-numbers',
@@ -7,7 +7,7 @@ import {ChartSettingsType} from '../../../chartist/chartist.component';
 })
 export class OnlyWholeNumbersComponent {
 
-  chartOpts: ChartSettingsType;
+  chartOpts: IChartistSettingsType;
   title = 'ONLY WHOLE NUMBERS';
 
   constructor() {

@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {ChartSettingsType} from '../../../chartist/chartist.component';
+import {IChartistSettingsType} from '../../../chartist/chartist.component';
 import {ChartistService} from '../../../chartist/chartist.service';
 
 @Component({
@@ -8,7 +8,7 @@ import {ChartistService} from '../../../chartist/chartist.service';
 })
 export class SvgPathAnimationComponent {
 
-  chartOpts: ChartSettingsType;
+  chartOpts: IChartistSettingsType;
   title = 'SVG PATH ANIMATION';
 
   constructor(chartistService: ChartistService) {

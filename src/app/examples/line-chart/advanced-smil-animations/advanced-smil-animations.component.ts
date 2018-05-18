@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {ChartSettingsType} from '../../../chartist/chartist.component';
+import {IChartistSettingsType} from '../../../chartist/chartist.component';
 
 @Component({
   selector: 'app-advanced-smil-animations',
@@ -7,12 +7,12 @@ import {ChartSettingsType} from '../../../chartist/chartist.component';
 })
 export class AdvancedSmilAnimationsComponent {
 
-  chartOpts: ChartSettingsType;
+  chartOpts: IChartistSettingsType;
   title = 'ADVANCED SMIL ANIMATIONS';
 
   constructor() {
 
-    let seq = 0,
+    const seq = 0,
       delays = 80,
       durations = 500;
 

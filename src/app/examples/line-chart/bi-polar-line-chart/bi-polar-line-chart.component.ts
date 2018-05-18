@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {ChartSettingsType} from '../../../chartist/chartist.component';
+import {Component} from '@angular/core';
+import {IChartistSettingsType} from '../../../chartist/chartist.component';
 
 @Component({
   selector: 'app-bi-polar-line-chart',
@@ -7,7 +7,7 @@ import {ChartSettingsType} from '../../../chartist/chartist.component';
 })
 export class BiPolarLineChartComponent {
 
-  chartOpts: ChartSettingsType;
+  chartOpts: IChartistSettingsType;
   title = 'BI-POLAR LINE CHART WITH AREA ONLY';
 
   constructor() {

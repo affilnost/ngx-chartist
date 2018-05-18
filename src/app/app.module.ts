@@ -21,6 +21,8 @@ import { SvgPathAnimationComponent } from './examples/line-chart/svg-path-animat
 import { LineInterpolationComponent } from './examples/line-chart/line-interpolation/line-interpolation.component';
 import { SeriesOverridesComponent } from './examples/line-chart/series-overrides/series-overrides.component';
 import { TimeSeriesWithMomentjsComponent } from './examples/line-chart/time-series-with-momentjs/time-series-with-momentjs.component';
+import { BiPolarBarChartComponent } from './examples/bar-chart/bi-polar-bar-chart/bi-polar-bar-chart.component';
+import { OverlappingBarsOnMobileComponent } from './examples/bar-chart/overlapping-bars-on-mobile/overlapping-bars-on-mobile.component';
 
 
 @NgModule({
@@ -39,7 +41,9 @@ import { TimeSeriesWithMomentjsComponent } from './examples/line-chart/time-seri
     SvgPathAnimationComponent,
     LineInterpolationComponent,
     SeriesOverridesComponent,
-    TimeSeriesWithMomentjsComponent
+    TimeSeriesWithMomentjsComponent,
+    BiPolarBarChartComponent,
+    OverlappingBarsOnMobileComponent
   ],
   imports: [
     BrowserModule,

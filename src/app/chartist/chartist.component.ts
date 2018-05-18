@@ -88,7 +88,7 @@ export interface IChartistEvent {
   [eventName: string]: (data: any) => void;
 }
 
-export interface ChartSettingsType {
+export interface IChartistSettingsType {
   data: IChartistData;
   options: IChartistOptions;
   events?: IChartistEvent;
