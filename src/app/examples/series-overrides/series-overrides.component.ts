@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
 import {ChartSettingsType} from '../../chartist/chartist.component';
 import {ChartistService} from '../../chartist/chartist.service';
 
@@ -32,6 +32,10 @@ export class SeriesOverridesComponent {
         // Within the series options you can use the series names
         // to specify configuration that will only be used for the
         // specific series.
+
+
+        // It seems that responsive series overrides are not working in Chartist.JS
+        // TODO: test it more times, report bug
         series: {
           'series-1': {
             lineSmooth: chartistService.getInterpolation()['step']()
