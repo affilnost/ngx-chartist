@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {ChartSettingsType} from '../../chartist/chartist.component';
-import {ChartistService} from '../../chartist/chartist.service';
+import {ChartSettingsType} from '../../../chartist/chartist.component';
+import {ChartistService} from '../../../chartist/chartist.service';
 import * as moment from 'moment';
 
 @Component({

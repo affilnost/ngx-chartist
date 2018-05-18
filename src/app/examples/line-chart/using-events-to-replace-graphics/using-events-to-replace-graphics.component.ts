@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ChartSettingsType} from '../../chartist/chartist.component';
-import {ChartistService} from '../../chartist/chartist.service';
+import {ChartSettingsType} from '../../../chartist/chartist.component';
+import {ChartistService} from '../../../chartist/chartist.service';
 
 @Component({
   selector: 'app-using-events-to-replace-graphics',

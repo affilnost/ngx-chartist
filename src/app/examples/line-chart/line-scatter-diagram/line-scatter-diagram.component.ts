@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {IChartistData, IChartistOptions, IChartistResponsiveOptions, ChartSettingsType} from '../../chartist/chartist.component';
+import {IChartistData, IChartistOptions, IChartistResponsiveOptions, ChartSettingsType} from '../../../chartist/chartist.component';
 
 @Component({
   selector: 'app-line-scatter-diagram',

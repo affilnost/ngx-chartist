@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ChartSettingsType} from '../../chartist/chartist.component';
+import {ChartSettingsType} from '../../../chartist/chartist.component';
 
 @Component({
   selector: 'app-line-interpolation',
