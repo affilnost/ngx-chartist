@@ -23,6 +23,13 @@ import { SeriesOverridesComponent } from './examples/line-chart/series-overrides
 import { TimeSeriesWithMomentjsComponent } from './examples/line-chart/time-series-with-momentjs/time-series-with-momentjs.component';
 import { BiPolarBarChartComponent } from './examples/bar-chart/bi-polar-bar-chart/bi-polar-bar-chart.component';
 import { OverlappingBarsOnMobileComponent } from './examples/bar-chart/overlapping-bars-on-mobile/overlapping-bars-on-mobile.component';
+import { AddPeakCirclesUsingDrawEventsComponent } from './examples/bar-chart/add-peak-circles-using-draw-events/add-peak-circles-using-draw-events.component';
+import { MultiLineLabelsComponent } from './examples/bar-chart/multi-line-labels/multi-line-labels.component';
+import { StackedBarChartComponent } from './examples/bar-chart/stacked-bar-chart/stacked-bar-chart.component';
+import { HorizontalBarChartComponent } from './examples/bar-chart/horizontal-bar-chart/horizontal-bar-chart.component';
+import { ExtremeResponsiveConfigurationComponent } from './examples/bar-chart/extreme-responsive-configuration/extreme-responsive-configuration.component';
+import { DistributedSeriesComponent } from './examples/bar-chart/distributed-series/distributed-series.component';
+import { LabelPlacementComponent } from './examples/bar-chart/label-placement/label-placement.component';
 
 
 @NgModule({
@@ -43,7 +50,14 @@ import { OverlappingBarsOnMobileComponent } from './examples/bar-chart/overlappi
     SeriesOverridesComponent,
     TimeSeriesWithMomentjsComponent,
     BiPolarBarChartComponent,
-    OverlappingBarsOnMobileComponent
+    OverlappingBarsOnMobileComponent,
+    AddPeakCirclesUsingDrawEventsComponent,
+    MultiLineLabelsComponent,
+    StackedBarChartComponent,
+    HorizontalBarChartComponent,
+    ExtremeResponsiveConfigurationComponent,
+    DistributedSeriesComponent,
+    LabelPlacementComponent
   ],
   imports: [
     BrowserModule,
