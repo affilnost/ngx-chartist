@@ -30,6 +30,12 @@ import { HorizontalBarChartComponent } from './examples/bar-chart/horizontal-bar
 import { ExtremeResponsiveConfigurationComponent } from './examples/bar-chart/extreme-responsive-configuration/extreme-responsive-configuration.component';
 import { DistributedSeriesComponent } from './examples/bar-chart/distributed-series/distributed-series.component';
 import { LabelPlacementComponent } from './examples/bar-chart/label-placement/label-placement.component';
+import { SimplePieChartComponent } from './examples/pie-chart/simple-pie-chart/simple-pie-chart.component';
+import { PieChartWithCustomLabelsComponent } from './examples/pie-chart/pie-chart-with-custom-labels/pie-chart-with-custom-labels.component';
+import { GaugeChartComponent } from './examples/pie-chart/gauge-chart/gauge-chart.component';
+import { AnimatingADonutComponent } from './examples/pie-chart/animating-a-donut/animating-a-donut.component';
+import { DonutChartUsingFillComponent } from './examples/pie-chart/donut-chart-using-fill/donut-chart-using-fill.component';
+import { GaugeChartUsingFillComponent } from './examples/pie-chart/gauge-chart-using-fill/gauge-chart-using-fill.component';
 
 
 @NgModule({
@@ -57,7 +63,13 @@ import { LabelPlacementComponent } from './examples/bar-chart/label-placement/la
     HorizontalBarChartComponent,
     ExtremeResponsiveConfigurationComponent,
     DistributedSeriesComponent,
-    LabelPlacementComponent
+    LabelPlacementComponent,
+    SimplePieChartComponent,
+    PieChartWithCustomLabelsComponent,
+    GaugeChartComponent,
+    AnimatingADonutComponent,
+    DonutChartUsingFillComponent,
+    GaugeChartUsingFillComponent
   ],
   imports: [
     BrowserModule,

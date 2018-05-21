@@ -39,6 +39,9 @@ body {
       text-transform: uppercase;
       font-weight: 300;
     }
+    .ct-negative-labels .ct-label {
+      fill: rgba(255,255,255,.8);
+    }
   }
 }
 
