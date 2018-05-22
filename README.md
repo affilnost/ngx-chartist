@@ -1,27 +1,16 @@
-# NgxChartist
+# ngx-chartist
+> ### CHARTIST.JS INTEGRATION FOR ANGULAR 2+
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+[![Join the chat at https://gitter.im/ngx-chartist/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ngx-chartist/Lobby)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![TypeScript](https://badges.frapsoft.com/typescript/love/typescript.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Contributing
+Please see the CONTRIBUTING file for guidelines.
 
-## Code scaffolding
+## License
+MIT
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Enjoy :stuck_out_tongue_winking_eye:
