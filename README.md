@@ -7,7 +7,7 @@
 [![TypeScript](https://badges.frapsoft.com/typescript/love/typescript.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
 
 ## [LIVE DEMO](https://affilnost.github.io/ngx-chartist/)
-[![ngx-chartist](https://bit.ly/2pxHJNK)](https://affilnost.github.io/ngx-chartist/)
+[![ngx-chartist](https://raw.githubusercontent.com/affilnost/ngx-chartist/master/src/assets/img/ngx-chartist-screen.png)](https://affilnost.github.io/ngx-chartist/)
 
 ## Contributing
 Please see the CONTRIBUTING file for guidelines.
