@@ -6,6 +6,8 @@
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![TypeScript](https://badges.frapsoft.com/typescript/love/typescript.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
 
+## [LIVE DEMO](https://affilnost.github.io/ngx-chartist/)
+[![ngx-chartist](https://affilnost.github.io/ngx-chartist/assets/images/ngx-chartist-screen.png)](https://affilnost.github.io/ngx-chartist/)
 
 ## Contributing
 Please see the CONTRIBUTING file for guidelines.

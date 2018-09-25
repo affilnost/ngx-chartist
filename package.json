@@ -10,7 +10,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "packagr": "ng-packagr -p ng-package.json",
-    "buildnpm": "ng build ngx-chartist;npm publish ./dist/ngx-chartist"
+    "buildnpm": "ng build ngx-chartist;npm publish ./dist/ngx-chartist",
+    "build-gh": "ng build --prod --base-href \"/ngx-chartist/\"",
+    "deploy-to-ghpages": "npm run build-gh && ngh"
   },
   "private": false,
   "dependencies": {
@@ -59,6 +61,7 @@
     "tsickle": ">=0.29.0",
     "tslib": "^1.9.0",
     "tslint": "~5.9.1",
-    "typescript": "~2.9.2"
+    "typescript": "~2.9.2",
+    "angular-cli-ghpages": "^0.5.2"
   }
 }
