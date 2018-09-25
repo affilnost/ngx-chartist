@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {IChartistSettingsType} from '../../../chartist/chartist.component';
-import {ChartistService} from '../../../chartist/chartist.service';
+import {NgxChartistService} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.service';
+import {IChartistSettingsType} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.component';
 
 @Component({
   selector: 'app-extreme-responsive-configuration',
@@ -11,7 +11,7 @@ export class ExtremeResponsiveConfigurationComponent {
   chartOpts: IChartistSettingsType;
   title = 'EXTREME RESPONSIVE CONFIGURATION';
 
-  constructor(chartistService: ChartistService) {
+  constructor(chartistService: NgxChartistService) {
     this.chartOpts = {
       data: {
         labels: ['Quarter 1', 'Quarter 2', 'Quarter 3', 'Quarter 4'],

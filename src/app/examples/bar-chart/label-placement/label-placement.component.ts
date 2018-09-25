@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {IChartistSettingsType} from '../../../chartist/chartist.component';
+import { Component } from '@angular/core';
+import {IChartistSettingsType} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.component';
 
 @Component({
   selector: 'app-label-placement',

@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {ChartistService} from '../../../chartist/chartist.service';
-import {IChartistSettingsType} from '../../../chartist/chartist.component';
+import {NgxChartistService} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.service';
+import {IChartistSettingsType} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.component';
 
 @Component({
   selector: 'app-add-peak-circles-using-draw-events',
@@ -11,7 +11,7 @@ export class AddPeakCirclesUsingDrawEventsComponent {
   chartOpts: IChartistSettingsType;
   title = 'ADD PEAK CIRCLES USING THE DRAW EVENTS';
 
-  constructor(chartistService: ChartistService) {
+  constructor(chartistService: NgxChartistService) {
     this.chartOpts = {
       data: {
         labels: ['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8', 'W9', 'W10'],

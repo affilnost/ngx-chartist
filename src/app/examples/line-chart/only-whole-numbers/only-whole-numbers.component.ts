@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {IChartistSettingsType} from '../../../chartist/chartist.component';
+import {IChartistSettingsType} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.component';
 
 @Component({
   selector: 'app-only-whole-numbers',

@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {IChartistSettingsType} from '../../../chartist/chartist.component';
-import {ChartistService} from '../../../chartist/chartist.service';
+import {NgxChartistService} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.service';
+import {IChartistSettingsType} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.component';
 
 @Component({
   selector: 'app-series-overrides',
@@ -11,7 +11,7 @@ export class SeriesOverridesComponent {
   chartOpts: IChartistSettingsType;
   title = 'SERIES OVERRIDES';
 
-  constructor(chartistService: ChartistService) {
+  constructor(chartistService: NgxChartistService) {
     this.chartOpts = {
       data: {
         labels: ['1', '2', '3', '4', '5', '6', '7', '8'],

@@ -1,1 +1,1 @@
-export * from './src/app/chartist/chartist.module';
+export * from './src/app/app.module';

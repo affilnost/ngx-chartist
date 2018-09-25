@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {IChartistSettingsType} from '../../../chartist/chartist.component';
-import {ChartistService} from '../../../chartist/chartist.service';
+import {NgxChartistService} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.service';
+import {IChartistSettingsType} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.component';
 
 @Component({
   selector: 'app-animating-a-donut',
@@ -11,7 +11,7 @@ export class AnimatingADonutComponent {
   chartOpts: IChartistSettingsType;
   title = 'ANIMATING A DONUT WITH SVG.ANIMATE';
 
-  constructor(chartistService: ChartistService) {
+  constructor(chartistService: NgxChartistService) {
     const self = this;
 
     this.chartOpts = {

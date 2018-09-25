@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
-import {IChartistSettingsType} from '../../../chartist/chartist.component';
-import {ChartistService} from '../../../chartist/chartist.service';
+import {NgxChartistService} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.service';
+import {IChartistSettingsType} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.component';
+
 
 @Component({
   selector: 'app-svg-path-animation',
@@ -11,7 +12,7 @@ export class SvgPathAnimationComponent {
   chartOpts: IChartistSettingsType;
   title = 'SVG PATH ANIMATION';
 
-  constructor(chartistService: ChartistService) {
+  constructor(chartistService: NgxChartistService) {
     this.chartOpts = {
       data: {
         labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],

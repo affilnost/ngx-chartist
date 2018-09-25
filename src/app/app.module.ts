@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import {ChartistModule} from './chartist/chartist.module';
 
 import {MaterialModule} from './shared/material.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
@@ -41,7 +40,7 @@ import { GaugeChartUsingFillComponent } from './examples/pie-chart/gauge-chart-u
 // see https://github.com/angular/angular-cli/wiki/stories-create-library), but it doesn't
 // import {NgxChartistComponent} from 'ngx-chartist';
 // workaround
-import {NgxChartistComponent} from '../../projects/ngx-chartist/src/lib/ngx-chartist.component';
+import {NgxChartistModule} from '../../projects/ngx-chartist/src/lib/ngx-chartist.module';
 
 
 @NgModule({
@@ -75,12 +74,11 @@ import {NgxChartistComponent} from '../../projects/ngx-chartist/src/lib/ngx-char
     GaugeChartComponent,
     AnimatingADonutComponent,
     DonutChartUsingFillComponent,
-    GaugeChartUsingFillComponent,
-    NgxChartistComponent
+    GaugeChartUsingFillComponent
   ],
   imports: [
     BrowserModule,
-    ChartistModule,
+    NgxChartistModule,
     MaterialModule,
     FlexLayoutModule
   ],

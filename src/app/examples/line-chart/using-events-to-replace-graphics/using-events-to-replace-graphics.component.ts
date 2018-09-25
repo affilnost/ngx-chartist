@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {IChartistSettingsType} from '../../../chartist/chartist.component';
-import {ChartistService} from '../../../chartist/chartist.service';
+import {NgxChartistService} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.service';
+import {IChartistSettingsType} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.component';
 
 @Component({
   selector: 'app-using-events-to-replace-graphics',
@@ -11,7 +11,7 @@ export class UsingEventsToReplaceGraphicsComponent {
   chartOpts: IChartistSettingsType;
   title = 'USING EVENTS TO REPLACE GRAPHICS';
 
-  constructor(chartistService: ChartistService) {
+  constructor(chartistService: NgxChartistService) {
     this.chartOpts = {
       data: {
         labels: [1, 2, 3, 4, 5],

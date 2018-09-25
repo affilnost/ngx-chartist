@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import {IChartistSettingsType} from '../../../chartist/chartist.component';
-import {ChartistService} from '../../../chartist/chartist.service';
+import {NgxChartistService} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.service';
 import * as moment from 'moment';
+import {IChartistSettingsType} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.component';
 
 @Component({
   selector: 'app-time-series-with-momentjs',
@@ -12,7 +12,7 @@ export class TimeSeriesWithMomentjsComponent {
   chartOpts: IChartistSettingsType;
   title = 'TIME SERIES WITH MOMENT.JS';
 
-  constructor(chartistService: ChartistService) {
+  constructor(chartistService: NgxChartistService) {
     this.chartOpts = {
       data: {
         labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
