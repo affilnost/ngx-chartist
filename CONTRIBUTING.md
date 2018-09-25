@@ -17,6 +17,11 @@ Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
+## NPM publish
+If you want to publish ngx-chartist package to nmp, then:
+1. Change the package version in `projects/ngx-chartist/package.json`
+2. Run: `npm run buildnpm`
+
 ### Unit tests / end-to-end tests
 Tests are currently not supported
 
