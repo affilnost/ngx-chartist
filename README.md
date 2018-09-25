@@ -9,6 +9,22 @@
 ## [LIVE DEMO](https://affilnost.github.io/ngx-chartist/)
 [![ngx-chartist](https://raw.githubusercontent.com/affilnost/ngx-chartist/master/src/assets/img/ngx-chartist-screen.png)](https://affilnost.github.io/ngx-chartist/)
 
+## Dependencies
+You need to have `@types/chartist` and `chartist` installed.
+
+In order to install them run:
+
+
+`npm install @types/chartist`
+
+`npm install chartist`
+
+## Installation
+Run `npm install ngx-chartist`
+
+## Usage
+See `src/app/examples` folder in this repo
+
 ## Contributing
 Please see the CONTRIBUTING file for guidelines.
 
