@@ -38,7 +38,7 @@ import { GaugeChartUsingFillComponent } from './examples/pie-chart/gauge-chart-u
 
 // the string below should work (should take path from tsconfig.json
 // see https://github.com/angular/angular-cli/wiki/stories-create-library), but it doesn't
-// import {NgxChartistComponent} from 'ngx-chartist';
+// import {NgxChartistModule} from 'ngx-chartist';
 // workaround
 import {NgxChartistModule} from '../../projects/ngx-chartist/src/lib/ngx-chartist.module';
 

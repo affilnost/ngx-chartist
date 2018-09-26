@@ -131,7 +131,6 @@ export class NgxChartistComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   public ngOnInit(): Promise<IChartistBase> {
-    debugger;
     if (!this.type || !this.data) {
       Promise.reject('Expected at least type and data.');
     }
