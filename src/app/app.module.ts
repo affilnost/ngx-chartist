@@ -36,11 +36,8 @@ import { AnimatingADonutComponent } from './examples/pie-chart/animating-a-donut
 import { DonutChartUsingFillComponent } from './examples/pie-chart/donut-chart-using-fill/donut-chart-using-fill.component';
 import { GaugeChartUsingFillComponent } from './examples/pie-chart/gauge-chart-using-fill/gauge-chart-using-fill.component';
 
-// the string below should work (should take path from tsconfig.json
-// see https://github.com/angular/angular-cli/wiki/stories-create-library), but it doesn't
-// import {NgxChartistModule} from 'ngx-chartist';
-// workaround
-import {NgxChartistModule} from '../../projects/ngx-chartist/src/lib/ngx-chartist.module';
+// if you want to use the local version (instead of npm-loaded), please use "tsconfig-copy.json" (with paths defined)
+import {NgxChartistModule} from 'ngx-chartist';
 
 
 @NgModule({

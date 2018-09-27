@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {IChartistSettingsType} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.component';
+import {IChartistSettingsType} from 'ngx-chartist';
 
 @Component({
   selector: 'app-donut-chart-using-fill',

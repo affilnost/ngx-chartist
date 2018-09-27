@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import {NgxChartistService} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.service';
+import {NgxChartistService} from 'ngx-chartist';
 import * as moment from 'moment';
-import {IChartistSettingsType} from '../../../../../projects/ngx-chartist/src/lib/ngx-chartist.component';
+import {IChartistSettingsType} from 'ngx-chartist';
 
 @Component({
   selector: 'app-time-series-with-momentjs',
